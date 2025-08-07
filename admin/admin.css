@@ -1,0 +1,189 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f3e5ab; /* warna krem kopi */
+  color: #3e2723;
+  margin: 0;
+  padding: 20px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #4e342e;
+}
+
+a {
+  text-decoration: none;
+  background-color: #6d4c41;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 6px;
+  margin-bottom: 15px;
+  display: inline-block;
+  transition: background-color 0.2s ease-in-out;
+}
+
+a:hover {
+  background-color: #5d4037;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff8e1;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+table th,
+table td {
+  border: 1px solid #d7ccc8;
+  padding: 12px;
+  text-align: center;
+}
+
+table th {
+  background-color: #a1887f;
+  color: white;
+}
+
+table td img {
+  border-radius: 8px;
+}
+
+/* Tombol Edit dan Hapus */
+td a {
+  margin: 0 5px;
+  padding: 6px 12px;
+  font-size: 0.9rem;
+}
+
+td a:nth-child(1) {
+  background-color: #039be5; /* Edit - Biru */
+}
+
+td a:nth-child(1):hover {
+  background-color: #0288d1;
+}
+
+td a:nth-child(2) {
+  background-color: #e53935; /* Hapus - Merah */
+}
+
+td a:nth-child(2):hover {
+  background-color: #c62828;
+}
+
+/* Form Tambah dan Edit */
+form {
+  max-width: 500px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+form label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+form input[type="text"],
+form textarea,
+form input[type="number"],
+form input[type="file"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+
+form button,form a {
+  margin-top: 15px;
+  background-color: #6d4c41;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+
+}
+
+
+
+form button:hover {
+  background-color: #5d4037;
+}
+
+/* ==========================
+   Responsive Breakpoints
+========================== */
+
+/* Mobile (max-width: 480px) */
+@media (max-width: 480px) {
+  body {
+    padding: 10px;
+  }
+
+  form {
+    padding: 15px;
+    margin: 20px auto;
+  }
+
+  table th,
+  table td {
+    padding: 8px;
+    font-size: 0.85rem;
+  }
+
+  td a {
+    display: block;
+    margin: 6px 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  a {
+    padding: 6px 12px;
+    font-size: 0.9rem;
+  }
+}
+
+/* Tablet (481px - 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+  body {
+    padding: 15px;
+  }
+
+  form {
+    width: 90%;
+    padding: 18px;
+  }
+
+  table th,
+  table td {
+    font-size: 0.95rem;
+    padding: 10px;
+  }
+
+  td a {
+    padding: 5px 10px;
+    font-size: 0.85rem;
+  }
+}
+
+/* Laptop dan ke atas (min-width: 769px) */
+@media (min-width: 769px) {
+  form {
+    width: 500px;
+  }
+
+  td a {
+    font-size: 0.9rem;
+  }
+}
+
